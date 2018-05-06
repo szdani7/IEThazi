@@ -37,25 +37,25 @@ android {
         props.load(new FileInputStream(propsFile))
     }
 
-//    signingConfigs {
-//        release {
-//            if (propsFile.exists()) {
-//                storeFile file(props['RELEASE_STORE_FILE'])
-//                storePassword props['RELEASE_STORE_PASSWORD']
-//                keyAlias props['RELEASE_KEY_ALIAS']
-//                keyPassword props['RELEASE_KEY_PASSWORD']
-//            }
-//        }
-//    }
+    signingConfigs {
+        release {
+            if (propsFile.exists()) {
+                storeFile file(props['RELEASE_STORE_FILE'])
+                storePassword props['RELEASE_STORE_PASSWORD']
+                keyAlias props['RELEASE_KEY_ALIAS']
+                keyPassword props['RELEASE_KEY_PASSWORD']
+            }
+        }
+    }
 	
-	signingConfigs {
-		release {
-			storeFile file(String.valueOf(System.getenv("GRADLE_KEYSTORE")))
-			storePassword System.getenv("GRADLE_KEYSTORE_PASSWORD")
-			keyAlias System.getenv("GRADLE_KEYSTORE_ALIAS")
-			keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
-		}
-	}
+//	signingConfigs {
+//		release {
+//			storeFile file(String.valueOf(System.getenv("GRADLE_KEYSTORE")))
+//			storePassword System.getenv("GRADLE_KEYSTORE_PASSWORD")
+//			keyAlias System.getenv("GRADLE_KEYSTORE_ALIAS")
+//			keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
+//		}
+//	}
 
     buildTypes {
         debug {
