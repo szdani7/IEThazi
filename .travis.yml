@@ -1,0 +1,23 @@
+
+language: android
+jdk: oraclejdk8
+android:
+  components:
+  - tools
+  - platform-tools
+  - tools
+  - build-tools-25.0.3
+  - android-25
+  - extra-android-support
+  - extra-google-google_play_services
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - addon-google_apis-google-25
+addons:
+  sonarcloud:
+    organization: "szdani7-github" # the key of the org you chose at step #3
+    token: "SONAR_TOKEN"
+  script:
+- chmod +x ./gradlew
+- ./gradlew build
+- sonar-scanner
