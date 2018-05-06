@@ -37,6 +37,7 @@ android {
         props.load(new FileInputStream(propsFile))
     }
 
+<<<<<<< HEAD
 //    signingConfigs {
 //        release {
 //            if (propsFile.exists()) {
@@ -65,6 +66,18 @@ android {
 			keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
 		}
 	}
+=======
+    signingConfigs {
+        release {
+            if (propsFile.exists()) {
+                storeFile file(props['RELEASE_STORE_FILE'])
+                storePassword props['RELEASE_STORE_PASSWORD']
+                keyAlias props['RELEASE_KEY_ALIAS']
+                keyPassword props['RELEASE_KEY_PASSWORD']
+            }
+        }
+    }
+>>>>>>> 31f33007b3787d4703ba6f62d51dc9f09d9915f4
 
     buildTypes {
         debug {

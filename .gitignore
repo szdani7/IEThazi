@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Built application files
 *.apk
 *.ap_
@@ -32,6 +33,8 @@ proguard/
 # Android Studio captures folder
 captures/
 =======
+=======
+>>>>>>> 31f33007b3787d4703ba6f62d51dc9f09d9915f4
 *.iml
 .gradle
 /local.properties
@@ -42,5 +45,9 @@ captures/
 /app/src/debug/google-services.json
 /app/src/release/google-services.json
 /app/src/staging/google-services.json
+<<<<<<< HEAD
+/release.properties
+>>>>>>> 31f33007b3787d4703ba6f62d51dc9f09d9915f4
+=======
 /release.properties
 >>>>>>> 31f33007b3787d4703ba6f62d51dc9f09d9915f4
