@@ -60,7 +60,7 @@ android {
 //			keyAlias System.getenv("GRADLE_KEYSTORE_ALIAS")
 //			keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
 //		}
-//	} 
+//	}
 
     buildTypes {
         debug {
