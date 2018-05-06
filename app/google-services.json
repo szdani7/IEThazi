@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1010251766920",
+    "firebase_url": "https://iethazi-866ce.firebaseio.com",
+    "project_id": "iethazi-866ce",
+    "storage_bucket": "iethazi-866ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010251766920:android:95649c21a8bc6266",
+        "android_client_info": {
+          "package_name": "app.outlay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010251766920-j7obualpbvf478nahs3auaorue7llra8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI2aO8DB6fHN8XT3OFeHbG85s19QbzmQw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
