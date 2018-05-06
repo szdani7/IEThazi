@@ -16,7 +16,7 @@ android:
 addons:
   sonarcloud:
     organization: "szdani7-github" # the key of the org you chose at step #3
-    token: SONAR_TOKEN
+    token: "SONAR_TOKEN"
   script:
 - chmod +x ./gradlew
 - ./gradlew build
