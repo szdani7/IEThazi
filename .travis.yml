@@ -13,11 +13,11 @@ android:
   - extra-google-m2repository
   - extra-android-m2repository
   - addon-google_apis-google-25
-#addons:
-#  sonarcloud:
-#    organization: "szdani7-github" # the key of the org you chose at step #3
-#    token: "SONAR_TOKEN"
-  script:
+addons:
+  sonarcloud:
+    organization: "szdani7-github" # the key of the org you chose at step #3
+    token: "SONAR_TOKEN"
+script:
 - chmod +x ./gradlew
 - ./gradlew build
 #- sonar-scanner
