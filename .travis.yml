@@ -21,4 +21,4 @@ addons:
 script:
 - chmod +x ./gradlew
 - ./gradlew build
-- sonar-scanner
+- sonar-scanner -Dsonar.projectKey=szdani7-github -Dsonar.sources=. -Dsonar.java.binaries=.
