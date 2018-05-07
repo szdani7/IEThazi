@@ -17,8 +17,8 @@ addons:
   sonarcloud:
     organization: "szdani7-github" # the key of the org you chose at step #3
     token:
-      secure: ${SONAR_TOKEN}
+      secure: $SONAR_TOKEN
 script:
 - chmod +x ./gradlew
 - ./gradlew build
-#- sonar-scanner
+- sonar-scanner
